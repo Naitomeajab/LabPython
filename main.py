@@ -1,8 +1,7 @@
 import os
 
 lab_list = {
-    "1": "lab1.py",
-    "2": "lab2.py"
+    "1": "lab1.py"
 }
 
 def main_menu():
