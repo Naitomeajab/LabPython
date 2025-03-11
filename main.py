@@ -1,9 +1,10 @@
 import os
 
 lab_list = {
-    "1": "lab1.py",
-    "2": "lab2.py",
-    "3": "lab3.py"
+    "1": "lab1/lab1.py",
+    "2": "lab2/lab2.py",
+    "3": "lab3/lab3.py",
+    "4": "lab4/lab4.py"
 }
 
 def main_menu():

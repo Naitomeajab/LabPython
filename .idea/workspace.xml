@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="202b5508-865f-4a4a-a34c-d7e8d0e43a23" name="Changes" comment="base">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laby/lab4/lab4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laby/lab1.py" beforeDir="false" afterPath="$PROJECT_DIR$/laby/lab1/lab1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laby/lab2.py" beforeDir="false" afterPath="$PROJECT_DIR$/laby/lab2/lab2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laby/lab3.py" beforeDir="false" afterPath="$PROJECT_DIR$/laby/lab3/lab3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laby/sil.py" beforeDir="false" afterPath="$PROJECT_DIR$/laby/lab3/sil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laby/stars.py" beforeDir="false" afterPath="$PROJECT_DIR$/laby/lab3/stars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +47,13 @@
     "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XxX\LabPython\laby\lab3" />
+      <recent name="C:\Users\XxX\LabPython\laby\lab2" />
+      <recent name="C:\Users\XxX\LabPython\laby\lab1" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LabPython" />
