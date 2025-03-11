@@ -1,11 +1,3 @@
-# #Zadanie 1
-# Utwórz listę z imionami (conajmniej 10 imion, część powinna się powtarzać)
-# określ indeks (numer wiersza) w której znajduje się imie osoby, nazwę osoby podaje użytkownik
-# ile osób o imieniu wskazanym przez użytkownika znajduje się na liście
-# dołącz nowe imie do listy do końca listy
-# dołącz nowe imię jako 3 pozycję na liście
-# posortuj obiekty w liście, usuń ostatni element z listy
-# utwórz nową listę z 3 imionami i dołącz do listy
 def task1():
     name_list = ["Anna", "Piotr", "Katarzyna", "Michał", "Anna", "Jakub", "Piotr", "Zofia", "Michał", "Aleksandra"]
     print(name_list)
@@ -21,12 +13,6 @@ def task1():
     name_list_aux = ["Piotr", "Kacper", "Aleksander"]
     name_list.extend(name_list_aux)
     print(name_list)
-
-######################Zadanie 2
-# Utwórz słownik zawierający  trzy klucze: imie, nazwisko, wiek
-# jako wartości w/w kluczy wpisz listy 3-elementowe zawierające dowolne dane osobowe
-# następnie wyświetl kompletne dane osoby o numerze wskazanej przez użytkownika
-
 def task2():
     main_dictionary = {
         "imie": ["Anna", "Jan", "Katarzyna"],
@@ -37,30 +23,13 @@ def task2():
     choice = int(input("Wybierz numer osoby (0, 1, 2): "));
     print(f"Imie: {main_dictionary['imie'][choice]}\n Nazwisko: {main_dictionary['nazwisko'][choice]}\n Wiek: {main_dictionary['wiek'][choice]}")
 
-    ######################Zadanie 2.1
-    # Do poprzednio utworzonego słownika dodaj nowy klucz o nazwie "kierunek_studiów", wartość w/w klucza dowolna
-    # wskazana przez użytkownika
-
     user_input = input("Dodaj kierunek studiów")
     main_dictionary.update({
         "kierunek_studiow": user_input
     })
     print(main_dictionary)
 
-    ######################Zadanie 2.2
-    # Wyświetl nazwy kluczy poprzednio utworzonego słownika, oraz ilość jego elementów
-    # ###########################################
-
     print(f"{main_dictionary.keys()}\n{main_dictionary.values()}")
-
-## 3. Sprawdź wynik działań
-# 0 > 1
-# 0 <= 1
-# 0 >= 1
-# 1 == 0
-# 1 == 1
-# 1 != 0
-# 1 != 1
 def task3():
     print(0 > 1)
     print(0 <= 1)
@@ -69,35 +38,26 @@ def task3():
     print(1 == 1)
     print(1 != 0)
     print(1 != 1)
-
-## 4. Oblicz wyrażenie 2x+5y   gdzie: x,y to dowolne dwie liczby które podaje użytkownik (w konsoli)
 def task4():
     x = int(input("Podaj X: "))
     y = int(input("Podaj Y: "))
     print(f"Wynik wyrażenia: {2*x} + {5*y} = {(2*x) + (5*y)}")
-## 5. Wyświetl zdanie "Jestem a b mam c lat studiuję d",
-## gdzie : a-imie, a-nazwisko, c-liczba, d-kierunek studiów są dowolne zmienne które podaje użytkownik (wczytywane z klawiatury)
 def task5():
     name = input("Imie: ")
     surname = input("Nazwisko: ")
     age = input("Wiek: ")
     studies = input("Kierunek studiów: ")
     print(f"Jestem {name} {surname} mam {age} lat studiuję {studies}")
-## 6. Sprawdź/porównaj czy 1+2+10+20000001+4+347586970885 jest równa 321784560456434534646
 def task6():
     sum = 1+2+10+20000001+4+347586970885
     print(f"1+2+10+20000001+4+347586970885 = {sum}\n"
           f"Czy {sum} jest równe 321784560456434534646 ?\n"
           f"{sum == 321784560456434534646}")
-## 7. Sprawdź czy suma dowolnych dwóch liczb podanych przez użytkownika jest liczbą parzystą czy nieparzystą wyświetl właściwy komunikat
-##   użyj operatora modulo % który zwraca resztę z dzielenia  np. 5%2   czyli 2 reszta 0
 def task7():
     x = int(input("Wprowadź pierwszą liczbę: "))
     y = int(input("Wprowadź drugą liczbę: "))
     sum = x+y
     print(f"Suma {x} i {y} to {sum}. Czy {sum} jest parzystą liczbą? {sum % 2 == 0}")
-## 8. Utwórz prosty kalkulator dla 2 zmiennych podanych przez użytkownika, który obliczy: sumę, różnicę,
-## iloczyn, iloraz, potęgę tych liczb, nie zapomnij o stosownych komentarzach informacyjnych dla użytkownika.
 def task8():
     x = int(input("Wprowadź pierwszą liczbę: "))
     y = int(input("Wprowadź drugą liczbę: "))
@@ -120,14 +80,10 @@ def task8():
             print(f"{x} ^ {y} = {x^y}")
         else:
             print("niepoprawna wartość")
-## 9. Dla dowolnego x sprawdź wynik działań (x > 1 and x < 13) oraz (x != 5 or x < 0)
 def task9():
     x = int(input("Wprowadź liczbę: "))
     print(f"{x} > 1 AND {x} < 13? {(x > 1) & (x < 13)}")
     print(f"{x} != 5 OR {x} < 0? {(x != 5) | (x < 0)}")
-# Zadania dodatkowe:
-# 10. Wykonaj mini ankietę tj. poproś użytkownika o następujące informacje: imie, nazwisko, wiek, zadaj mu pytania: "Czy zdrowo się odżywiasz?",
-# , "Czy lubisz sport?" i dodatkowo 3 inne własne. Po uzyskaniu wszystkich odpowiedzi wyświetl ich podsumowanie.
 def task10():
     name = input("Imie: ")
     surname = input("Nazwisko: ")
@@ -179,8 +135,6 @@ def task10():
           f"Lubi uniwersum Warhammer'a: {bool(is_liking_warhammer)}\n"
           f"Lubi paradox: {bool(is_liking_paradox)}\n"
           f"Lubi Cirno: {bool(is_liking_cirno)}") #Zawsze false
-# 11. Twoim zadaniem jest przygotowanie uniwersalnego i profesjonalnego życiorysu, złożonego z 5-ciu zdań, które wyświetlisz na ekranie
-# Użytkownik wpisuje tylko swoje imie, nazwisko, wiek, zawód, miejsce urodzenia, zainteresowania i ... życiorys jest gotowy.
 def task11():
     name = input("Imie: ")
     surname = input("Nazwisko: ")
@@ -192,8 +146,6 @@ def task11():
           f"Urodziłem się w {place_of_origin}."
           f"Jestem osobą, która stawia na ciągły rozwój zawodowy i osobisty. Moją pasją jest {interests}, "
           f"a w pracy stawiam na wysoką jakość oraz efektywność.")
-# 12. Przygotuj dla dziecka, które uczy się czytać zestaw sylab do nauki, ale zrób to inteligentnie tj.
-# dziecko wpisuje na klawiaturze 1 spółgłoskę a Ty dodajesz do niej odpowiednie samogłoski i wyświetlasz całość na ekranie
 def task12():
     vowels_list = ["A", "E", "I", "O", "U", "Y", "Ó"]
     while True:
@@ -207,7 +159,6 @@ def task12():
     while iterator < len(vowels_list):
         print(f"{prefix}{vowels_list[iterator]}")
         iterator += 1
-# 13. Użytkownik podaje imie, sprawdź czy to imie to Janusz lub Grażyna)
 def task13():
     name = input("Imie: ")
     if name == "Janusz" or name == "Grażyna": result = ""
@@ -265,7 +216,6 @@ def menu():
             break
         else:
             print("Błędny wybór.")
-
 
 if __name__ == "__main__":
     menu()
